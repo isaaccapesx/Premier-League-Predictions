@@ -10,7 +10,7 @@ This project went towards my A Level in computer Science. It was influenced by t
 ![image](https://github.com/user-attachments/assets/afb1b30d-ccff-4b4f-89dc-498885c832e6)
 
 ## Prediction Page
-![image](https://github.com/user-attachments/assets/3fc0d4db-e5f6-441c-9056-d3265007cb18)
+![image](https://github.com/user-attachments/assets/da66d23c-8082-41d1-8a00-c96a020cc35e)
 
 ## Database for users scores
 ![image](https://github.com/user-attachments/assets/5bcd0412-1c5e-46d5-9171-864cbf0cc705)
