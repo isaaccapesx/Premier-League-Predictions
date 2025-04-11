@@ -1,0 +1,16 @@
+pages i need to do
+
+create league PAGE
+join league PAGE
+
+online league PAGE
+league settings (removes users from league,)
+
+
+online prediction PAGE
+
+settings - Page
+change first name, last name, email
+account security (enable 2fa, change password)
+delete account  (have at very bottom)
+notifications

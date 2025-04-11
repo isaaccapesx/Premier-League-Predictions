@@ -1,0 +1,1081 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');         /*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+:root {          /*colour pallete*/                                                
+    --primary-color: #D2B48C;
+    --light-color: #dadada;
+    --dark-color: #3F1052 ;
+    --white1-color: #e9e9e9; 
+    --white2-color: #d6d6d6;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+    --light2-color:#7054bd;
+    --black-color:#000000;
+    --blue-color:#00aeff;
+    --red-color:#ff0000;
+}
+
+*{     /*box sizing margin and padding*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-padding-top: 45%;
+    scroll-behavior: smooth;
+    image-rendering: optimizeSpeed;
+}
+
+body { /* entire body */
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: var(--white1-color);
+}
+
+ul {/*unordered list*/
+    list-style-type: none;
+}
+
+a { /*style for links*/
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+h1, h2 {   /*styles for heading 1 and 2*/
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {  /*paragraph styles*/
+    margin: 10px 0;
+}
+
+
+.gap{  /*making the gap at the top*/
+    color: transparent;
+    font-size: 0px;
+    padding: 0px;
+    margin: 3px;
+}
+
+.logotxt {  /*footer Premier League Predictions.*/
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+}
+
+.logo1 {/*style for Premier*/
+    position: absolute;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-top: -70px;
+}
+
+.logo2 {/*style for League*/
+    position: absolute;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+
+.logo3 { /*style for predictions*/
+    position: absolute;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+.logoimg {                          /* Premier league lion front face*/
+    position: relative;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    height: 150px;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.sticky {               /*when scrolling, it will stay in the same position*/                   
+	position: -webkit-sticky; /*makes it stick to a certain position*/
+	position: sticky; /*makes it stick to a certain position*/
+	top: 0; /*positions it at the top*/
+    z-index: 1000; /*sets the stacking order*/
+}
+
+/* Navbar */
+.navbar {/*top nav bar*/
+    background-color: var(--dark-color);
+    color: var(--white1-color);
+    height: 190px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.5);
+}
+
+.navbar ul {/*nav bar button list*/
+    display: flex;
+}
+
+.navbar a { /*links in the nav bar*/
+    color: var(---white1-color);
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {/* nav bar when cursour hovers over it*/
+    font-weight: 1000;
+    border-bottom: 1px var(--white1-color) solid;
+}
+
+.navbar .active {/*when the button is clicked*/
+    font-weight: 1000;
+    border-radius: 5px;
+    border: 1px var(--white1-color) solid;
+}
+
+.navbar .flex {  /*adds appropiate space in navbar and flex*/
+    justify-content: space-between;
+}
+
+/* Teams */
+.Teams {                    /* team buttons at the top*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Teams .flex{  /*making website smaller makes the team cards go onto multiple lines*/
+    flex-wrap: wrap;
+}
+
+.Teams .card{ /* team button*/
+    text-align: center;
+    margin: 9px 5px 10px;
+}
+.Teams .TeamCard{  /*team button*/
+    text-align: center;
+    margin: 5px 6px 5px;
+}
+
+.Teams .card:hover{   /* when cursor hovers over the football badge raise*/
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.Teams .TeamCard:hover{   /* when cursor hovers over the football badge raise*/
+    transform: translateY(-5px); /*moves the card upwards*/
+    cursor: pointer; /*changes cursor when hovering*/
+}
+
+/* Footer */
+.footer {
+    height: 210px; /*height of footer*/
+    box-shadow: 0 -3px 10px 0 rgba(0,0,0,0.5);
+    z-index: 999;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.social{ /*social buttons at the bottom*/
+    position: relative;
+    display: flex;
+    flex: content;
+    margin-left: 200px;
+    margin-right: 140px;
+    justify-items: center;
+
+}
+
+.footernav { /*assigns the buttons to the right*/
+    position: relative;
+    float: right;
+    display: flex;
+    bottom: 0px;
+}
+
+.footer .social a { /*social media icons*/
+    display: flex;
+    margin: 10px 10px;
+}
+
+.footer ul { /*footer buttons to align it to the right*/
+    display: flex;
+    float: right;
+    position: relative;
+}
+
+.footer a { /*text stuff in the footer*/
+    color: var(--white1-color);
+    padding: 5px;
+    margin: 0 10px;
+}
+/*
+.footer a { /*text colour in footer
+    color: var(--white1-color);
+}
+*/
+.footernav a:hover { /*when hovering*/
+    font-weight: 1000;
+    border-bottom: 1px var(--white1-color) solid;
+}
+
+.footer .active { /*when the button is clicked*/
+    font-weight: 1000;
+    border-radius: 5px;
+    border: 1px var(--white1-color) solid;
+}
+
+/* Utilities */
+.containernav { /*boxes inside header*/
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.container { /*centers everything*/
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.card { /*teams at the top*/
+    background-color: var(--white1-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+}
+
+.TeamCard { /*teams at the top*/
+    background-color: var(--white1-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white1-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.bg-light a{ /*background*/
+    background-color: transparent;
+    border: 1px #333 solid;
+}
+
+.bg-light nav a{
+    background-color: transparent;
+    border: 1px var(--light-color) solid;
+}
+/* buttons*/
+.btn-outline {
+    background-color: transparent;
+    border: 1px var(--light-color) solid;
+}
+
+.btn:hover {
+    font-weight: bold;
+    transform: scale(0.95);
+}
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.bg-dark, 
+.btn-dark {
+    background-color: var(--dark-color);
+    color: var(--white1-color);
+}
+
+.bg-light,
+.btn-light {
+    background-color: var(--white1-color);
+    color: #333;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.current {
+    font-weight: bold;
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--white1-color);
+}
+
+.lead {
+    font-size: 20px;
+}
+/*font sizes in rems*/
+.sm {
+    font-size: 1rem;
+}
+
+.smA {
+    font-size: 1.05rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex { /*moves content based on the size of the website*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid { /*grids at the bottom for individual section. each section is socials/buttons and the PLP copyright */
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3-1{ /*spacing between each sections*/
+    grid-template-columns: 3fr 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+/* Padding */
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+
+/*padding*/
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+.MABox{           /*managing account box*/
+    height: 510px; /*height of managing account box*/
+    width:600px;    /*width of managin account box*/
+    background-color:var(--white1-color);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: #505050 solid;
+    color:#000000;
+    font-family: 'Gothic A1', sans-serif;
+}
+.MABox h1{     /*text at the top of the box (Managing my account)*/
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+.MABoxOne{             /*how do i change my email box*/
+    width: 596px; /*top line width*/
+    height: 150px; /*height of the changing email box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.MABoxTwo{     /*how do i reset my password*/
+    width: 594px; /*top line width*/
+    height: 150px; /*height of the reset password box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.MABoxThree{ /*how do i sign up*/
+    width:596px;
+    height:185px;
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px;
+}
+
+.MABox h2{          /*"Changing email", "Reset Password" "sign up"Second heading*/
+    font-size: 30px;
+}
+.MABox p{          /*information about revelevant heading 2*/
+    font-size: 20px;
+}
+
+.USEBox{           /*how do i use plp box*/
+    height: 575px; /*height of use plp  box*/
+    width:600px;    /*width of use plp box*/
+    background-color:var(--white1-color); /*colour in box*/
+    display:absolute;
+    margin-top: 17.5px; /*gap between top*/
+    margin-bottom: 17.5px; /*gap of the bottom*/
+    border: #505050 solid; /*border colour*/
+    color:#000000; /*colour of font*/
+    font-family: 'Gothic A1', sans-serif; /*font of entire box*/
+}
+.USEBox h1{     /*text at the top of the box (how do i use plp)*/
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+.USEBoxOne{             /*how to predict box*/
+    width: 596px; /*top line width*/
+    height: 125px; /*height of the how to predict box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.USEBoxTwo{     /*when can i change my predictions*/
+    width: 594px; /*top line width*/
+    height: 185px; /*height of the points work box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.USEBoxThree{ /*Can I have multiple predictions*/
+    width:596px;
+    height:175px;
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px;
+}
+
+.USEBox h2{          /*"how do i predict", "when can i change my predictions" "can i have multiple predictions" Second heading*/
+    font-size: 30px;
+}
+.USEBox p{          /*information about revelevant headings 2*/
+    font-size: 20px;
+}
+.PBox{           /*how do my points work box */
+    height: 690px; /*height of box*/
+    width:600px;    /*width of p box*/
+    background-color:var(--white1-color); /*colour in box*/
+    display:absolute;
+    margin-top: 17.5px; /*gap between top*/
+    margin-bottom: 17.5px; /*gap of the bottom*/
+    border: #505050 solid; /*border colour*/
+    color:#000000; /*colour of font*/
+    font-family: 'Gothic A1', sans-serif; /*font of entire box*/
+}
+.PBox h1{     /*text at the top of the box ("How do my points work?" )*/
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+.PBoxOne{             /*how do I get points*/
+    width: 596px; /*top line width*/
+    height: 280px; /*height of box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.PBoxTwo{     /*how does my wildcard work*/
+    width: 594px; /*top line width*/
+    height: 190px; /*height of the points work box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.PBoxThree{ /*when do i recieve my points*/
+    width:596px;
+    height:75px;
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px;
+}
+
+.PBox h2{          /*"how do i get points", "when do i recieve my points" "how does my wildcard work" Second heading*/
+    font-size: 30px;
+}
+.PBox p{          /*information about revelevant headings 2*/
+    font-size: 20px;
+}
+.LBox{           /*League box*/
+    height: 650px; /*height of box*/
+    width:600px;    /*width of p box*/
+    background-color:var(--white1-color); /*colour in box*/
+    display:absolute;
+    margin-top: 17.5px; /*gap between top*/
+    margin-bottom: 17.5px; /*gap of the bottom*/
+    border: #505050 solid; /*border colour*/
+    color:#000000; /*colour of font*/
+    font-family: 'Gothic A1', sans-serif; /*font of entire box*/
+}
+.LBox h1{     /*text at the top of the box (Leagues)*/
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+.LBoxOne{             /*why cant i join my friends league*/
+    width: 596px; /*top line width*/
+    height: 180px; /*height of box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.LBoxTwo{     /*why have i been removed for my from my friends league*/
+    width: 594px; /*top line width*/
+    height: 220px; /*height of the points work box*/
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px; /*border with top line only*/
+}
+.LBoxThree{ /*How do i see my friends predictions?*/
+    width:596px;
+    height:75px;
+    border:#505050 solid;
+    border-width: 3px 0px 0px 0px;
+}
+
+.LBox h2{          /*"how to predict", "how do points work" "how does my wildcard work" Second heading*/
+    font-size: 30px;
+}
+.LBox p{          /*information about revelevant headings 2*/
+    font-size: 20px;
+}
+.HomeBanner{ /*banner for users to sign in and register*/
+    background-color: var(--light2-color); /*violet colour*/
+    height:100px;
+    width:100%;
+    color:var(--white1-color);
+    padding-top:20px;
+}
+
+.HomeBanner H1{ /*text that says in the banner "sign in"*/
+    margin-top: 0px;
+    margin-right:250px;
+    margin-left: 160px;
+    font-weight: bold;
+    font-size:30px;
+    float:left;
+}
+.HomeBanner h2{ /*text that says "register here"*/
+ 
+    margin-right: 100px;
+    font-weight: bold;
+    font-size:15px;
+    float:right;  
+    color:var(--white1-color)
+}
+.HomeBanner h2:hover{ /*when user hovers over "register here"*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input[type=text] { /*where users enter their email*/
+    margin-top: 5px;
+    margin-left:10px;
+    margin-right: 20px;
+    font-size:15px;
+    height:30px;
+    width:220px;
+    padding-right: 20px;
+}
+.input[type=password]  { /*where users enter their password*/
+  
+    margin-left:10px;
+    margin-right: 20px;
+    font-size:15px;
+    height:30px;
+    width:220px;
+    padding-right:20px;
+}
+.RegisterAccount{ /*moves everything to do with the signup form to the center*/
+    color:var(--black-color);
+    max-width: 426px;
+}
+.RegisterAccount h1{ /*text that says "Register your account"*/
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.RegisterAccount h2{ /*text that says "Please enter your details down below"*/
+    font-size: 25px;
+    text-align: center;
+}
+.RALine{ /*line that goes underneath "Please enter your details"*/
+    width: 425px; /*top line width*/
+    height: 1px; /*height of the points work box*/
+    border:#505050 solid;
+    border-width: 5px 0px 0px 0px; /*border with top line only*/
+}
+.RegInputLeft[type=text]{ /*first name and surname boxes*/
+    font-size: 20px;
+    height:40px;
+    width:210px;
+    margin-top:10px;
+    margin-bottom: 0px;
+    margin-right: 2px;
+    padding-left: 8px;
+}
+.RegInputRight[type=text]{ /*first name and surname boxes*/
+    font-size: 20px;
+    height:40px;
+    width: 210px;
+    margin-top:10px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+
+}
+.RegInput01[type=text]{ /*box for email, confirm email*/
+    font-size: 20px;
+    height:40px;
+    width:425px;
+    margin-top:8px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+}
+.RegInput[type=password]{ /*box for password*/
+    font-size: 20px;
+    height:40px;
+    width:425px;
+    margin-top:8px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+}
+.button{ /*buttons for the register page */
+    height:50px;
+    width:100px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top:8px;
+    color:var(--light-color);
+}
+.button:hover{ /*works for the cancel and enter button in the register page*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Enter{ /*inherits from the button class and goes green for enter*/
+    background-color: #22c02fcc;
+    color:#d6d6d6;
+    border-radius: 5px;
+    
+
+}
+.Cancel{ /*inherits from the button class and goes red for enter and to move the enter button to the right*/
+    background-color: #ff0800a2;
+    margin-right: 222px;
+    color:#d6d6d6;
+    border-radius: 5px;
+}
+.RegisterAccount p{ /*password requirements*/
+    font-size: 18px;
+    size:60px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    line-height: 1rem;
+    text-align: left;
+}
+.signupbutton{ /*register button on the banner that says "Enter".*/
+    height:30px;
+    width:70px;
+    margin-left: 820px;
+    background-color:  #22c02f;
+    position: relative;
+    bottom: 32px;
+}
+.signupbutton:hover{ /*when cursour hovers over the button*/
+    text-decoration: underline;
+}
+.blankspace{ /*creates whitespace on the signup page to make password requirements move in*/
+    padding-left: 5px;
+}
+
+
+.blankspace1{ /*to make password requirements move over*/
+    padding-top: 8px;
+}
+
+
+.PLHeader2{ /*on prediction league page*/
+    padding-top:25px;
+    text-decoration: bold;
+    color:#000000;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+}
+
+.PLHeader2 h1{ /*on prediction league page that says "Play against your friends"*/
+    font-size: 35px;
+    margin:10px;
+    text-decoration: bold;
+    color:#000000;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    
+}
+.PLHeader2 h2{ /*on prediction league page that says "join or create league"*/
+    font-size: 25px;
+    margin:10px;
+    text-decoration: bold;
+    color:#000000;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+}
+.LeagueButton1 { /*create league button*/
+    height:50px;
+    width:170px;
+    background-color:var(--light2-color);
+    color:var(--white1-color);
+    font-family: 'Gothic A1';
+    font-size:20px;
+    margin-right: 185px;
+    margin-left:11px;
+}
+
+.LeagueButton2 { /*join league button*/
+    height:50px;
+    width:170px;
+    background-color:var(--light2-color);
+    color:var(--white1-color);
+    font-family: 'Gothic A1';
+    font-size:20px;
+}
+.LeagueButton1 a{ /*makes the font white*/
+    color:var(--white1-color);
+}
+.LeagueButton1 a:hover { /*when hovering*/
+    text-decoration: underline;
+}
+.LeagueButton2 a{  /*makes the font white*/
+    color:var(--white1-color);
+}
+.LeagueButton2 a:hover { /*when hovering*/
+    text-decoration: underline;
+}
+
+
+.column{ /* images that are on your predictions*/
+    float: left;
+    align-items: center;
+    padding:10px;
+}
+
+.column2{ /*team in your predictions*/
+    float: left;
+    vertical-align: bottom;
+    align-items: center;
+    padding:10px;
+}
+
+.column3{ /* input of score*/
+    float: left;
+    align-items: center;
+    padding:10px;
+}
+
+.column4{ /* text that says VS in your predictions*/
+    float: left;
+    padding:10px;
+    align-items: center;
+}
+
+/* Clear floats */
+.row::after {
+    content: "";    
+    clear: both;     
+    display: table;  
+}
+
+.column1 h1{ /*TEAMS*/
+    font-size:20px;
+    color:var(--black-color);
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+
+}
+
+.column4 h1, .column2 h1{ /*VS*/
+    margin:0px !important;
+    font-size:20px;
+    color:var(--black-color);
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    padding-top: 18px;
+
+}
+
+.predictionInput[type=text] { /*where users enter their prediction*/
+    font-size:15px;
+    height:32px;
+    width:35px;
+    font-size:20px;
+    font-family:'Gothic A1', sans-serif;
+    color:var(--black-color);
+}
+.Line100 /*line that goes underneath each match*/
+{
+    border:var(--dark-color) solid !important; /*i need to use !important as it inherts something from somewhere else which makes the line disappear*/
+    border-width: 0px 0px 3px 0px !important; 
+    width: 100% !important;
+}
+.WelcomeHeader h1{ /*text that says "welcome back" on index page*/
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    color:var(--black-color);
+    font-size: 35px;
+}
+.box1 /*boxes on index2 page for information*/
+{
+    color:var(--white1-color);
+    background-color: var(--blue-color);
+    font-family: 'Gothic A1', sans-serif;   
+    height:250px;
+    width:250px;
+    text-align: left;
+    padding: 1.5rem;
+   
+}
+.box1 h1{ /*header inside the blue boxes*/
+    font-size:25px;
+
+}
+.box1 h2{ /*information inside the blue boxes*/
+    font-size:15px;
+}
+.box1 a {
+
+    text-decoration: underline;
+}
+
+.playerpictures{ /* picture on the index page */
+    height: 280px;
+    width: 512px;
+}
+.LeagueName{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Gothic A1', sans-serif;
+}
+.logout2{
+    height:50px;
+    width:75px;
+    background-color:var(--red-color);
+    color: var(--white1-color);
+    padding:0.5rem;
+    font-size: 12px;
+    margin:15px;
+}
+.logout2:hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+    width: 100%;
+}
+}
+
+/* Tablets and Under */
+@media(max-width: 950px) {
+    .navbar .logo {
+        transform: scale(0);
+    }
+
+    .navbar ul {
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    .jobs-main .grid,
+    .meettheteam-main .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-card {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .jobs-head,
+    .jobs-sub-head,
+    .meettheteam-main {
+        text-align: center;
+    }
+
+    .jobs-head img,
+    .jobs-sub-head img,
+    .meettheteam-main img {
+        justify-self: center;
+    }
+
+    .jobs-main .grid > *:first-child,
+    .jobs-main .grid > *:nth-child(2){
+        grid-column: 1;
+    }
+}
+
+/* Mobile */
+@media(max-width: 950px) {
+    .navbar {
+        height: 240px;
+        padding-bottom: 25px;
+        padding-top: 150px;
+    }
+
+    .navbar .logoimg {
+        position: absolute;
+        top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        transform: scale(0.7);
+    }
+
+    .navbar .logo1 {
+        transform: scale(0);
+    }
+    .navbar .logo2 {
+        transform: scale(0);
+    }
+    .navbar .logo3 {
+        transform: scale(0);
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.15);
+        text-align: center;
+        float: left;
+    }
+
+    .navbar a:hover {
+        font-weight: bold;
+        border-bottom: 0px var(--light-color) solid;
+    }
+}
