@@ -6,7 +6,7 @@ This project went towards my A Level in computer Science. It was influenced by t
 ## Index Page
 ![image](https://github.com/user-attachments/assets/8ac2bc61-efb3-4e75-9000-0a33699a87e1)
 
-#Index Page after logging in
+## Index Page after logging in
 ![image](https://github.com/user-attachments/assets/755b9954-ccb5-4cd1-a897-6666553f81c8)
 
 ## Premier League Table
