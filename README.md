@@ -20,3 +20,6 @@ This project went towards my A Level in computer Science. It was influenced by t
 
 ## Code for Predictions
 ![image](https://github.com/user-attachments/assets/727ea4c5-6220-4b59-b80e-5ed8ebaf6bc0)
+
+## Registration Code
+![image](https://github.com/user-attachments/assets/75a6269d-01a6-4e6f-99b3-6a7efb7a1ad4)
