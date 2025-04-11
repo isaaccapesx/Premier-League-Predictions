@@ -3,6 +3,8 @@ This HTML, CSS, PHP, SQL website was my first project and was required for my A 
 ## Scenario / Context
 This project went towards my A Level in computer Science. It was influenced by the Fantasy Premier League but instead of players, you predict the scores and gain points. I had ran out of time to complete it, and have lost interest in this project, however I may decide to finish this project if I gain interest back. These are some of the pictures I have found in the documentation and I currently can not get the php code to run, but I can get the HTML and CSS to work. Users could successfully join and create leagues to compete against their friends and secure databases were created for logging in, creating accounts, leagues, predictions and scores. All of these seperate databases were connected to each other.
 
+I had a lot of fun creating this project and have not included every page. I wish to complete this some day, and optimise the code. There is definitely room for improvement but I am proud considering this was my first proper coding project. 
+
 ## Index Page
 ![image](https://github.com/user-attachments/assets/8ac2bc61-efb3-4e75-9000-0a33699a87e1)
 
